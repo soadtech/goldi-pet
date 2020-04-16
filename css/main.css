@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato&family=Roboto:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header nav ul {
+    font-family: 'Roboto', sans-serif;
+}
+header nav .navbar-brand{
+    font-family: 'Fredoka One', cursive;
+    font-size: 2rem;
+}
+header nav .navbar-brand::after{
+    content: '';
+    position: relative;
+    top: -25px;
+    width: 100%;
+    height: 20px;
+    background-color: #ffcf01;
+    display: block;
+    z-index: -1;
+}
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.hero .img img{
+ width: 80%;
+}
+/**### informacion del hero ###**/
+.hero .info-hero .main h1{
+    font-family: 'Fredoka One', cursive;
+}
+.hero .info-hero .main p{
+    font-family: 'Lato', sans-serif;
+}
+/**boton del hero**/
+.hero .info-hero .main a{
+    background-color: #ffcf01;
+    color: #000;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+/**Wish to adopt this cute one? **/
+.hero .info-hero .pets p a {
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    width: fit-content;
+    color: #000;
+}
+.hero .info-hero .pets p a:hover{
+    text-decoration: none;
+}
+.hero .info-hero .pets p:hover span{
+    margin-left: 10px;
+    transition: 0.5s ease;
+}
+
+/** PETS **/
+.hero .info-hero .pets .cont-img{
+    display: flex;
+}
+
+.hero .info-hero .pets .cont-img img{
+    width: 25%;
+    border-radius: 20px;
+}
